@@ -40,9 +40,9 @@ class SavingBankAccount: public BankAccount {
 // };
 int main() {
     SavingBankAccount savingAccount;
-    savingAccount.balance = 1212; // ❌ Not accessible
+    // savingAccount.balance = 1212; // ❌ Not accessible
     savingAccount.setInterestRate(10); // Not accessible as it is protected
-    savingAccount.setBalance(5000); // ✅ Allowed through function
+    // savingAccount.setBalance(5000); // ✅ Allowed through function
     cout << savingAccount.getInterestRate()<< endl; // ✅ Allowed through function
     cout << savingAccount.getBalance(); // ✅ Allowed through function
     return 0;
